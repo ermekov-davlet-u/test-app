@@ -18,10 +18,21 @@ function MainPage() {
       <div className="main-content">
 
           <Header />
-              <button className='back_btn'> <MdChevronLeft className='back__icon' /> Вернуться на главную </button>
+          <button className='back_btn'> <MdChevronLeft className='back__icon' /> Вернуться на главную </button>
           <Filter />
           <Content />
-      </div>
+
+          <footer className='footer_text'>
+            <p className='footer_text'>
+              © 2022 ООО “Компания”, Все права защищены.
+            </p>
+            <div className="footer-btns">
+              <a href={'#'} className="footer_btn">Вопрос-ответ</a>
+              <a href={'#'} className="footer_btn">Политика конфиденциальности</a>
+              <a href={'#'} className="footer_btn">История обновлений</a>
+            </div>
+          </footer>
+      </div>  
     </main>
   );
 }

@@ -1,13 +1,33 @@
 import Select from 'react-select'
 import React, { Component } from 'react'
+import { selectType } from '../../store/models';
 
 interface SelectPropType {
   title?: string 
   setValue: (param: any) => void;
   value?: any
+  option?: selectType[]
 }
 
-function Selector({title, setValue, value}: SelectPropType) {
+function Selector({title, setValue, value, option = [
+  {
+      value: 4,
+      label: 'Погружен'
+  },
+  {
+      value: 3,
+      label: 'Прибыл'
+  },
+  {
+      value: 2,
+      label: 'Назначен ответственный менеджер'
+  },
+  {
+    value: 1,
+    label: 'Новый'
+  },
+
+] }: SelectPropType) {
 
     const customStyles = {
         option: (provided: any, state: any) => ({
@@ -48,25 +68,7 @@ function Selector({title, setValue, value}: SelectPropType) {
               
             }}
             value={value}
-            options={[
-                {
-                    value: 4,
-                    label: 'Погружен'
-                },
-                {
-                    value: 3,
-                    label: 'Прибыл'
-                },
-                {
-                    value: 2,
-                    label: 'Назначен ответственный менеджер'
-                },
-                {
-                  value: 1,
-                  label: 'Новый'
-                },
-            
-            ]}
+            options={option}
             />
         </div>
      );

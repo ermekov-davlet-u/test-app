@@ -100,6 +100,7 @@ code {
   color: #ACACAC;
   cursor: pointer;
   background: #E5E5E5;
+  text-transform: capitalize;
 }
 .back__icon{
   margin-right: 8px;
@@ -121,3 +122,45 @@ button{
   position: relative;
 }
 
+a{
+  text-decoration: none;
+  color: #39569A;
+}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #39569A;
+}
+.footer-btns{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #606B87;
+}
+
+.footer_btn{
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none !important;
+  color: #606B87 !important;
+}
+.footer_btn:hover{
+  border-bottom: 1px solid #606B87;
+}
+
+.footer_text{
+  font-size: 13px;
+line-height: 24px;
+/* identical to box height, or 185% */
+
+
+/* Grey/600 */
+
+color: #2A2E37;
+padding: 24px 0;
+}

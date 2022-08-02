@@ -37,8 +37,41 @@ function Filter() {
                 Все грузы
             </h2>
             <div className={classes.container}>
-                <Selector value={port} setValue = { setPort }  title="Порт назначения" />
-                <Selector value={status} setValue = { setStatus } title="Статус" />
+                <Selector value={port} setValue = { setPort }  title="Порт назначения" option={[
+                {
+                    value: 4,
+                    label: 'Архангельск '
+                },
+                {
+                    value: 3,
+                    label: 'Певек'
+                },
+                {
+                    value: 2,
+                    label: 'Зеленый Мыс'
+                },
+                {
+                  value: 1,
+                  label: 'Мыс Шмидта'
+                },{
+                    value: 4,
+                    label: 'Архангельск '
+                },
+                {
+                    value: 3,
+                    label: 'Певек'
+                },
+                {
+                    value: 2,
+                    label: 'Зеленый Мыс'
+                },
+                {
+                  value: 1,
+                  label: 'Мыс Шмидта'
+                },
+            
+            ]} />
+                <Selector value={status} setValue = { setStatus } title="Статус"/>
                 <div className={classes.date} >
                     <p style={{ marginBottom: '10px', color: '#828282', fontSize: 12, textAlign: 'left', display: "flex", alignItems: 'center'}} >Дата поступления в порт</p>
                     <DatePicker selected={date} onChange={(date:Date) => setDate(date)} />

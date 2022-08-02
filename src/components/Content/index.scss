@@ -216,6 +216,11 @@ line-height: 18px;
   box-shadow: inset 0px -1px 0px #E9E9E9;
   border: 1px solid red;
   margin-left: 48px;
+  &:hover{
+    background: #FB2C2C;
+    box-shadow: inset 0px -1px 0px #ff0000;
+    color: #E5E5E5;
+  }
 }
 .act_btn_icon{
   margin-right: 24px;

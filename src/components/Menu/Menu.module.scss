@@ -66,8 +66,8 @@ $greyColor: #7C7C7C;
     
     /* Grey/600 */
     
-    color: $bgcelem;
-    text-decoration: none;
+    color: $bgcelem !important;
+    text-decoration: none !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;

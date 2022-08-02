@@ -22,6 +22,14 @@ function Content() {
         count: 2
     })
 
+    const changeSort = (param: number) => {
+        if(param == sort){
+            setSort(0)
+            return
+        }
+        setSort(param)
+    }
+
     return ( 
         <div>
             <div className="container">
@@ -41,43 +49,43 @@ function Content() {
                             <div className="col col-1" >
                                 Номер груза
                                 <ImSortAmountDesc className={ sort == 1? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(1)
+                                    changeSort(1)
                                 }} />
                             </div>
                             <div className="col col-1">
                                 Тип
                                 <ImSortAmountDesc className={ sort == 2? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(2)
+                                    changeSort(2)
                                 }} />
                             </div>
                             <div className="col col-1">
                                 Закрепленный заказ 
                                 <ImSortAmountDesc className={ sort == 3? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(3)
+                                    changeSort(3)
                                 }} />
                             </div>
                             <div className="col col-1">
                                 Грузоотправитель
                                 <ImSortAmountDesc className={ sort == 4? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(4)
+                                    changeSort(4)
                                 }} />
                             </div>
                             <div className="col col-3">
                                 Номер приемного акта
                                 <ImSortAmountDesc className={ sort == 5? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(5)
+                                    changeSort(5)
                                 }} />
                             </div>
                             <div className="col col-2">
                                 Номер транспортной/ЖД накладной
                                 <ImSortAmountDesc className={ sort == 6? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(6)
+                                    changeSort(6)
                                 }} />
                             </div>
                             <div className="col col-2">
                                 Дата поступления в порт
                                 <ImSortAmountDesc className={ sort == 7? "col_icon col_icon_active" : "col_icon" } onClick={() => {
-                                    setSort(7)
+                                    changeSort(7)
                                 }} />
                             </div>
                             <div className="col col-0">
