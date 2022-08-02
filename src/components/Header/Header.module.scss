@@ -1,0 +1,60 @@
+.header{
+    padding: 12px 0;
+    width: calc(100% - 28px);
+}
+.container{
+    width: calc(100% - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.left{
+    display: flex;
+}
+.search{
+    padding: 16px 20px;
+    background: #F3F3F5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.search_inp{
+    padding: 4px 18px;
+    font-size: 13px;
+    color: #82868C;
+    width: 320px;
+    height: 28px;
+    background: #F3F3F5;
+}
+.right{
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    align-items: center;
+}
+.right_text{
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    /* Main company's color */
+    
+    color: #5A5A5A;
+}
+.header_btn{
+    background: #ADB4C2;
+    width: 47px;
+    height: 47px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover{
+        background: #858993;
+    }
+}
+.icon{
+    font-size: 18px;
+}
